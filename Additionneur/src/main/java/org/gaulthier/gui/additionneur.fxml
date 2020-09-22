@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="437.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gaulthier.gui.AdditionneurController">
+   <children>
+      <TextArea fx:id="display" layoutX="13.0" layoutY="14.0" prefHeight="200.0" prefWidth="275.0" />
+      <Button fx:id="button0" layoutX="24.0" layoutY="233.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="236.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="77.0" layoutY="233.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="1" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="183.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="130.0" layoutY="233.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="2" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" layoutX="183.0" layoutY="233.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="3" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="77.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" layoutX="236.0" layoutY="233.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="4" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="24.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" layoutX="24.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="5" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="236.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" layoutX="77.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="6" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="183.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button7" layoutX="130.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="7" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button8" layoutX="183.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="8" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="77.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" layoutX="236.0" layoutY="297.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="45.0" text="9" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="24.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearButton" layoutX="24.0" layoutY="373.0" mnemonicParsing="false" onAction="#clear" prefHeight="45.0" prefWidth="100.0" text="Vider">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="calcButton" layoutX="176.0" layoutY="373.0" mnemonicParsing="false" onAction="#calc" prefHeight="45.0" prefWidth="100.0" text="Calculer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
