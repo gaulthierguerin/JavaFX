@@ -17,16 +17,22 @@ public class AdditionneurController {
     public Button button8;
     public Button button9;
     public TextArea display;
-    public int resultat;
+    public int result;
 
 
     public void add(ActionEvent actionEvent) {
+        Button btn = (Button) actionEvent.getSource();
+        display.appendText("+" + btn.getText());
+        result += Integer.parseInt(btn.getText());
     }
 
     public void clear(ActionEvent actionEvent) {
+        display.clear();
+        result = 0;
     }
 
     public void calc(ActionEvent actionEvent) {
+        display.setText("" + result);
     }
 }
 
