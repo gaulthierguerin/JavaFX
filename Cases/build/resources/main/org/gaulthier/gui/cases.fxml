@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gaulthier.gui.CasesController">
+   <children>
+      <TitledPane fx:id="choicePane" animated="false" collapsible="false" disable="true" layoutX="383.0" layoutY="28.0" prefHeight="142.0" prefWidth="237.0" text="Choix">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="backgroundCheck" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#choiceChecked" text="Couleur du fond">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="textCheck" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#choiceChecked" text="Couleur du texte">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="caseCheck" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" onAction="#choiceChecked" text="Casse">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="backgroundPane" animated="false" collapsible="false" disable="true" layoutX="33.0" layoutY="281.0" prefHeight="142.0" prefWidth="161.0" text="Fond">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="backgroundColorRed" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#colorChecked" text="Rouge">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Fond" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="backgroundColorGreen" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#colorChecked" text="Vert" toggleGroup="$Fond">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="backgrounColorBlue" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#colorChecked" text="Bleu" toggleGroup="$Fond">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="textPane" animated="false" collapsible="false" disable="true" layoutX="245.0" layoutY="281.0" prefHeight="142.0" prefWidth="161.0" text="Texte">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="textColorRed" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#textChecked" text="Rouge">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="textColorWhite" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#textChecked" text="Blanc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="textColorBlack" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#textChecked" text="Noir">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="casePane" animated="false" collapsible="false" disable="true" layoutX="459.0" layoutY="281.0" prefHeight="142.0" prefWidth="161.0" text="Casse">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="lowercase" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#caseChecked" text="Minuscule">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="uppercase" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#caseChecked" text="Majuscule">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TextField fx:id="input" layoutX="32.0" layoutY="62.0" onKeyReleased="#textTyped" prefHeight="30.0" prefWidth="325.0" promptText="Entrez un mot ou une phrase">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="textDisplay" layoutX="32.0" layoutY="110.0" prefHeight="45.0" prefWidth="325.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
