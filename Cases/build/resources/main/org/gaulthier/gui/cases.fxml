@@ -50,7 +50,7 @@
                         <Font size="14.0" />
                      </font>
                   </RadioButton>
-                  <RadioButton fx:id="backgrounColorBlue" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#colorChecked" text="Bleu" toggleGroup="$Fond">
+                  <RadioButton fx:id="backgroundColorBlue" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#colorChecked" text="Bleu" toggleGroup="$Fond">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -66,13 +66,16 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Texte" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="textColorWhite" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#textChecked" text="Blanc">
+                  <RadioButton fx:id="textColorWhite" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#textChecked" text="Blanc" toggleGroup="$Texte">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </RadioButton>
-                  <RadioButton fx:id="textColorBlack" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#textChecked" text="Noir">
+                  <RadioButton fx:id="textColorBlack" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#textChecked" text="Noir" toggleGroup="$Texte">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -89,8 +92,11 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Casse" />
+                     </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="uppercase" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#caseChecked" text="Majuscule">
+                  <RadioButton fx:id="uppercase" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#caseChecked" text="Majuscule" toggleGroup="$Casse">
                      <font>
                         <Font size="14.0" />
                      </font>
