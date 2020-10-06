@@ -49,6 +49,7 @@ public class CasesController {
             backgroundColorBlue.setSelected(false);
             backgroundColorGreen.setSelected(false);
             backgroundColorRed.setSelected(false);
+            textDisplay.setStyle("-fx-background-color: none;");
         }
 
         if (textCheck.isSelected()) {
@@ -67,6 +68,7 @@ public class CasesController {
             casePane.setDisable(true);
             lowercase.setSelected(false);
             uppercase.setSelected(false);
+            textDisplay.setText(input.getText());
         }
 
 
