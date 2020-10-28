@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gaulthier.gui.SliderController">
+   <children>
+      <Slider fx:id="sliderRed" layoutX="54.0" layoutY="318.0" max="255.0" onMouseDragged="#colorChange" prefHeight="14.0" prefWidth="373.0" />
+      <Slider fx:id="sliderGreen" layoutX="54.0" layoutY="377.0" max="255.0" onMouseDragged="#colorChange" prefHeight="14.0" prefWidth="373.0" />
+      <Slider fx:id="sliderBlue" layoutX="54.0" layoutY="432.0" max="255.0" onMouseDragged="#colorChange" prefHeight="14.0" prefWidth="373.0" />
+      <Label fx:id="redLabel" layoutX="454.0" layoutY="301.0" prefHeight="47.0" prefWidth="194.0" />
+      <Label fx:id="greenLabel" layoutX="454.0" layoutY="358.0" prefHeight="47.0" prefWidth="194.0" />
+      <Label fx:id="blueLabel" layoutX="454.0" layoutY="415.0" prefHeight="47.0" prefWidth="194.0" />
+      <Label fx:id="colorResult" layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="601.0" />
+   </children>
+</AnchorPane>
