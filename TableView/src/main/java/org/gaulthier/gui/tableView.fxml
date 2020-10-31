@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gaulthier.gui.TableViewController">
+    <TableView fx:id="lst_clients" layoutX="14.0" layoutY="69.0" prefHeight="430.0" prefWidth="540.0">
+      <columns>
+          <TableColumn fx:id="col_prenom" prefWidth="180.0" text="Prénom" />
+          <TableColumn fx:id="col_nom" prefWidth="180.0" text="Nom" />
+          <TableColumn fx:id="col_ville" prefWidth="180.0" text="Ville" />
+      </columns>
+    </TableView>
+    <Label layoutX="14.0" layoutY="10.0" text="Le Tableau de l'exo">
+        <font>
+          <Font name="Arial" size="48.0" />
+        </font>
+        <textFill>
+          <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.5285714285714287" startX="1.0">
+              <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#b25f00" offset="1.0" />
+              </stops>
+          </LinearGradient>
+        </textFill>
+    </Label>
+    <Group layoutX="566.0" layoutY="69.0">
+        <Label text="Prénom">
+            <font>
+                <Font name="Arial" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutY="90.0" text="Nom">
+            <font>
+                <Font name="Arial" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutY="180.0" text="Ville">
+            <font>
+                <Font name="Arial" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_prenom" layoutY="45.0" prefHeight="35.0" prefWidth="180.0" promptText="Prénom...">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txt_nom" layoutY="135.0" prefHeight="35.0" prefWidth="180.0" promptText="Nom...">
+         <font>
+             <Font size="15.0" />
+         </font>
+        </TextField>
+        <TextField fx:id="txt_ville" layoutY="225.0" prefHeight="35.0" prefWidth="180.0" promptText="Ville...">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+
+    </Group>
+    <Group layoutX="577.0" layoutY="383.0">
+        <Button fx:id="btn_save" mnemonicParsing="false" onMouseClicked="#sauver" prefHeight="35.0" prefWidth="75.0" text="Sauver">
+         <font>
+             <Font size="15.0" />
+         </font>
+        </Button>
+        <Button fx:id="btn_cancel" layoutX="84.0" mnemonicParsing="false" onMouseClicked="#annuler" prefHeight="35.0" prefWidth="75.0" text="Annuler">
+         <font>
+             <Font size="15.0" />
+         </font>
+        </Button>
+        <Button fx:id="btn_delete" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="35.0" prefWidth="158.0" text="Supprimer">
+         <font>
+             <Font size="15.0" />
+         </font>
+        </Button>
+    </Group>
+</AnchorPane>
